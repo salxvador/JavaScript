@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+    </head>
+
+    <body>
+        <p>some text.</p>
+        <p id="NotA" onclick="NotA()">Click here for NaN result</p>
+        <p id="NTrue" onclick="NTrue()">Click here for NaN=True</p>
+        <p id="NFalse" onclick="NFalse()">Click here for Nan=False</p>
+        <p id="inf" onclick="inf()">Click here to display infinity (2E310)</p>
+        <p id="negInf" onclick="negInf()">Click here to display negative infinity (-2E310)</p>
+        <p id="bTrue" onclick="bTrue()">Click here to display boolean true (5 &lt; 10)</p>
+        <p id="bFalse" onclick="bFalse()">Click here to display boolean false (5 &gt; 10)</p>
+        <p id="eqqq1" onclick="eqqq1()">=== comparisons. [5 === 5]: </p>
+        <p id="eqqq2" onclick="eqqq2()">=== comparisons. ['five' === 6]: </p>
+        <p id="eqqq3" onclick="eqqq3()">=== comparisons. ['six' === 6]: </p>
+        <p id="eqqq4" onclick="eqqq4()">=== comparisons. [66 === 6]: </p>
+        <p id="andTrue" onclick="andTrue()">&amp;&amp; comparisons. [5&lt;10 &amp;&amp; 6&lt;10]: </p>
+        <p id="andFalse" onclick="andFalse()">&amp;&amp; comparisons. [5&lt;10 &amp;&amp; 6&gt;10]: </p>
+        <p id="orTrue" onclick="orTrue()">|| comparisons. [5&gt;10 || 6&lt;10]: </p>
+        <p id="orFalse" onclick="orFalse()">|| comparisons. [5&gt;10 || 6&gt;10]: </p>
+        <p id="notTrue" onclick="notTrue()">! comparisons. [!20 &gt; 10]: </p>
+        <p id="notFalse" onclick="notFalse()">! comparisons. [!20 &lt; 10]: </p>
+    </body>
+</html>
