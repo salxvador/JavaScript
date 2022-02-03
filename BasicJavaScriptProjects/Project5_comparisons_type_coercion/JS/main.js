@@ -3,7 +3,7 @@ document.write(typeof "Sal"); //string
 //document.write(typeof 6.05); //number
 //document.write(typeof 4); //also number
 
-document.write("50" + 18);
+document.write("50" + 18); //treats number as string, concats two values to '5018'
 
 function NotA() { //will display NaN because 0/0 is not a number.
     document.getElementById("NotA").innerHTML = 0/0;
