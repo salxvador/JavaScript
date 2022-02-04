@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./JS/main.js"></script>
+    <title>Scope Time Function</title>
+</head>
+<body>
+    <p id="global" onclick="global()">Click for example with global variable:</p>
+    <p id="local" onclick="local()">Click for example with local variable:</p>
+    <p id="localx" onclick="localx()">Click for example with nonlocal, nonglobal variable:</p>
+    <p id="date" onclick="dateFn()">Click for date if function example: </p>
+    
+    <!--Fn only has if, no 'else'-->
+    <button id="chooseNum" onclick="isOdd()">Click to check if number is odd!<br>Only returns if its true</button>
+    <input id="num" placeholder="Please enter a number" />
+    <p id="isOdd"></p>
+
+    <!--Fn has if and else-->
+    <button id="choose" onclick="isOdd2()">Click to check if number is odd!<br>Returns true or false.</button>
+    <input id="num2" placeholder="Please enter a number" />
+    <p id="isOdd2"></p>
+
+    <!--Time of Day button-->
+    <button onclick="timeofday()">Click here to get the time of day.</button>
+    <p id="reply"></p>
+</body>
+</html>
