@@ -19,8 +19,6 @@ function countdown() {
 //so no image would display on initial page load. had to click a dot to get images to show.
 //added onload event to HTML body to run showSlides() explicitly..
 var slideIndex = 1;
-showSlides(slideIndex);
-console.log(getElementsByClassName("mySlides"));
 
 // Next/Prev controls:
 function plusSlides(n) {
@@ -48,3 +46,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active"; //activates the image with matching index
 }
+showSlides(slideIndex);
