@@ -72,7 +72,7 @@ function checkWinConditions() {
     if      (arrayincludes('0X','1X','2X')) { drawWinLine(50,100,558,100) }
     else if (arrayincludes('3X','4X','5X')) { drawWinLine(50,304,558,304) }
     else if (arrayincludes('6X','7X','8X')) { drawWinLine(50,508,558,508) }
-    else if (arrayincludes('0X','3X','6X')) { drawWinLine(50,100,558,100) }
+    else if (arrayincludes('0X','3X','6X')) { drawWinLine(100,50,100,558) }
     else if (arrayincludes('1X','4X','7X')) { drawWinLine(304,50,304,558) }
     else if (arrayincludes('2X','5X','8X')) { drawWinLine(508,50,508,558) }
     else if (arrayincludes('6X','4X','2X')) { drawWinLine(100,508,510,90) }
@@ -80,7 +80,7 @@ function checkWinConditions() {
     else if (arrayincludes('0O','1O','2O')) { drawWinLine(50,100,558,100) }
     else if (arrayincludes('3O','4O','5O')) { drawWinLine(50,304,558,304) }
     else if (arrayincludes('6O','7O','8O')) { drawWinLine(50,508,558,508) }
-    else if (arrayincludes('0O','3O','6O')) { drawWinLine(50,100,558,100) }
+    else if (arrayincludes('0O','3O','6O')) { drawWinLine(100,50,100,558) }
     else if (arrayincludes('1O','4O','7O')) { drawWinLine(304,50,304,558) }
     else if (arrayincludes('2O','5O','8O')) { drawWinLine(508,50,508,558) }
     else if (arrayincludes('6O','4O','2O')) { drawWinLine(100,508,510,90) }
