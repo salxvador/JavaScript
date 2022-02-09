@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(238, 210, 139);
+}
+
+h1 {
+    margin-left: 135px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: crimson;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(226, 21, 21);
+}
+
+div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(168, 32, 8);
+}
+
+#menuBG {
+    width: 610px;
+    height: 700px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 610px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+/*.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}*/
+
+/*Use inline block for menu sections instead of float*/
+.menu {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: text-top;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 210px;
+    width: 100px;
+    height: 40px;
+}
