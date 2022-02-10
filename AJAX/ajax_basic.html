@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+		<script type="text/javascript">
+			// Step 1: Set up the xml http request object
+            var ajx = new XMLHttpRequest();
+
+            // Step 2: Prepare the open AJAX request
+            //Get retrieves data, POST pushes data to the server
+            //This is retrieving everything withing content.html file.
+            ajx.open('GET', 'content.html');
+            
+            // Step 3: Define the AJAX response callback method
+            //readyState of 4 means that the response is ready.
+            ajx.onreadystatechange = function() {
+                if (ajx.readyState ==4){
+                    document.getElementById('content').innerHTML = ajx.responseText;
+                }
+            }
+
+            // Step 4: Send the AJAX request for data.
+            //This is so that we can use the button to execute the code above.
+            //only ajx.send() is really necessary
+            function getContent() {
+                ajx.send();
+                document.getElementById("btn_content").style.display =  "none";
+            }
+
+		</script>
+    </body>
+</html>
