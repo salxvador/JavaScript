@@ -3,11 +3,17 @@ var usedNums = new Array(76);
 
 function initAll() {
     if (document.getElementById) {    
-        for (var i = 0; i < 24; i++) {
-            setSquare(i);
-        }
-    } else {
+        document.getElementById("reload").onclick = anotherCard;
+        newCard();
+    } 
+    else {
         alert("Sorry, your browser does not support this script.");
+    }
+}
+
+function newCard() {
+    for (var i = 0; i < 24; i++) {
+        setSquare(i);
     }
 }
 
@@ -28,4 +34,12 @@ function setSquare(thisSquare) {
 
 function getNewNum() {
     return Math.floor(Math.random() * 15);
+}
+
+function anotherCard() {
+    for (var i = 1; i < usedNums.length; i++) {
+        usedNums[i] = false;
+    }
+    newCard();
+    return false;
 }
